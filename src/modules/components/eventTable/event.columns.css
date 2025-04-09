@@ -1,0 +1,6 @@
+@tailwind components;
+@tailwind utilities;
+
+.bold-header .MuiDataGrid-columnHeaderTitle {
+    font-weight: bold;
+}

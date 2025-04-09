@@ -1,0 +1,52 @@
+docker buildx build \
+--platform linux/arm64 \
+--file Dockerfile.base \
+--tag 254222561633.dkr.ecr.ap-northeast-1.amazonaws.com/osg-backoffice-base:latest \
+.
+
+docker buildx build --platform linux/arm64 \
+--build-arg FUNCTIONALITY=Odds \
+--build-arg NEXT_PUBLIC_BOGW_API_URL=https://sl-osg-odds-bo-gateway.ollehsports.com \
+--build-arg NEXT_PUBLIC_OAUTH_API_URL=https://sl-osg-oauth.ollehsports.com \
+--build-arg NEXT_PUBLIC_BO_BET_API_URL=https://sl-osg-bet.ollehsports.com \
+--build-arg NEXT_PUBLIC_BO_FEED_API_URL=https://sl-osg-feed-handler.ollehsports.com \
+--build-arg NEXT_PUBLIC_ENCRYPT_KEY=8zPWmfFp9zlFyV0yFhnx4tjdslTR+huWr9uCz7W0cp4= \
+--build-arg NEXT_PUBLIC_LOCAL_ENCRYPT_KEY=e7kfmbNTnlP7e9Qimxw4w2K2gtJNBJqgB1x9MgM8vdA= \
+--build-arg NEXT_PUBLIC_MUI_X_PRO_KEY=20dd700e34dc8bd4c3c47d75ac85d80cTz04MDg2NCxFPTE3MzQ2NzcyOTYwMDAsUz1wcm8sTE09c3Vic2NyaXB0aW9uLEtWPTI= \
+--build-arg NEXT_PUBLIC_LOGIN_ENCRYPTION_KEY_ID=messaging-client \
+--build-arg NEXT_PUBLIC_LOGIN_ENCRYPTION_KEY_SECRET=secret \
+--build-arg NEXT_PUBLIC_TRANSLATION_VERSION=2.2 \
+--tag 254222561633.dkr.ecr.ap-northeast-1.amazonaws.com/osg-odds-backoffice:test \
+--file Dockerfile.new .
+
+
+docker buildx build --platform linux/arm64 \
+--build-arg FUNCTIONALITY=Bets \
+--build-arg NEXT_PUBLIC_BOGW_API_URL=https://sl-osg-bet-bo-gateway.ollehsports.com \
+--build-arg NEXT_PUBLIC_OAUTH_API_URL=https://sl-osg-oauth.ollehsports.com \
+--build-arg NEXT_PUBLIC_BO_BET_API_URL=https://sl-osg-bet.ollehsports.com \
+--build-arg NEXT_PUBLIC_BO_FEED_API_URL=https://sl-osg-feed-handler.ollehsports.com \
+--build-arg NEXT_PUBLIC_ENCRYPT_KEY=8zPWmfFp9zlFyV0yFhnx4tjdslTR+huWr9uCz7W0cp4= \
+--build-arg NEXT_PUBLIC_LOCAL_ENCRYPT_KEY=e7kfmbNTnlP7e9Qimxw4w2K2gtJNBJqgB1x9MgM8vdA= \
+--build-arg NEXT_PUBLIC_MUI_X_PRO_KEY=20dd700e34dc8bd4c3c47d75ac85d80cTz04MDg2NCxFPTE3MzQ2NzcyOTYwMDAsUz1wcm8sTE09c3Vic2NyaXB0aW9uLEtWPTI= \
+--build-arg NEXT_PUBLIC_LOGIN_ENCRYPTION_KEY_ID=messaging-client \
+--build-arg NEXT_PUBLIC_LOGIN_ENCRYPTION_KEY_SECRET=secret \
+--build-arg NEXT_PUBLIC_TRANSLATION_VERSION=2.2 \
+--tag 254222561633.dkr.ecr.ap-northeast-1.amazonaws.com/osg-bets-backoffice:v0.0.66-sl \
+--file Dockerfile .
+
+
+docker buildx build --platform linux/arm64 \
+--build-arg FUNCTIONALITY=Admin \
+--build-arg NEXT_PUBLIC_BOGW_API_URL=https://sl-osg-bbo-gateway.ollehsports.com \
+--build-arg NEXT_PUBLIC_OAUTH_API_URL=https://sl-osg-oauth.ollehsports.com \
+--build-arg NEXT_PUBLIC_BO_BET_API_URL=https://sl-osg-bet.ollehsports.com \
+--build-arg NEXT_PUBLIC_BO_FEED_API_URL=https://sl-osg-feed-handler.ollehsports.com \
+--build-arg NEXT_PUBLIC_ENCRYPT_KEY=8zPWmfFp9zlFyV0yFhnx4tjdslTR+huWr9uCz7W0cp4= \
+--build-arg NEXT_PUBLIC_LOCAL_ENCRYPT_KEY=e7kfmbNTnlP7e9Qimxw4w2K2gtJNBJqgB1x9MgM8vdA= \
+--build-arg NEXT_PUBLIC_MUI_X_PRO_KEY=20dd700e34dc8bd4c3c47d75ac85d80cTz04MDg2NCxFPTE3MzQ2NzcyOTYwMDAsUz1wcm8sTE09c3Vic2NyaXB0aW9uLEtWPTI= \
+--build-arg NEXT_PUBLIC_LOGIN_ENCRYPTION_KEY_ID=messaging-client \
+--build-arg NEXT_PUBLIC_LOGIN_ENCRYPTION_KEY_SECRET=secret \
+--build-arg NEXT_PUBLIC_TRANSLATION_VERSION=2.2 \
+--tag 254222561633.dkr.ecr.ap-northeast-1.amazonaws.com/osg-admin-backoffice:v0.0.66-sl \
+--file Dockerfile .

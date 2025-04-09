@@ -1,0 +1,215 @@
+# Default values for osg-service.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+environment: sl
+# match subsets v1 in DestinationRule
+serviceDeployment:
+  replicaCount: 1
+  weight: 100
+  image:
+    repository: 254222561633.dkr.ecr.ap-northeast-1.amazonaws.com/osg-backoffice-base
+    pullPolicy: Always
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "v0.0.108-sl"
+# match subsets v2 in DestinationRule
+canaryDeployment:
+  enabled: false
+  replicaCount: 0
+  weight: 0
+  image:
+    repository: 254222561633.dkr.ecr.ap-northeast-1.amazonaws.com/osg-backoffice-base
+    pullPolicy: Always
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "bd709cfb2d"
+imagePullSecrets: []
+nameOverride: "osg-bets-backoffice"
+fullnameOverride: "osg-bets-backoffice"
+serviceAccount:
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: "osg-bets-backoffice"
+  # Specifies whether a service account should be created
+  create: true
+  # Automatically mount a ServiceAccount's API credentials?
+  automount: true
+  # Annotations to add to the service account
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::254222561633:role/eks-osg-react-backoffice-bets-iam-role-sl
+podAnnotations:
+  admission.datadoghq.com/js-lib.version: latest
+  ad.datadoghq.com/osg-service.logs: '[]'
+datadoghq_injection: "'false'"
+podLabels: {}
+podSecurityContext: {}
+# fsGroup: 2000
+securityContext: {}
+# capabilities:
+#   drop:
+#   - ALL
+# readOnlyRootFilesystem: true
+# runAsNonRoot: true
+# runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: &clusterport 3000
+ports: []
+# - name: http
+#   containerPort: 80
+#   protocol: TCP
+
+resources:
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  limits:
+    cpu: 2500m
+    memory: 2560Mi
+  requests:
+    cpu: 500m
+    memory: 512Mi
+lifecycle:
+  preStop:
+    exec:
+      command: ["sh", "-c", "sleep 90"]
+command: ["/bin/sh", "-c", "yarn build && yarn start"]
+args: []
+envFrom:
+  - configMapRef:
+      name: osg-bets-backoffice
+  - secretRef:
+      name: osg-bets-backoffice
+# - secretRef:
+#     name: osg-bets-backoffice
+# If you need to add additional environment variables to the container definition
+extraEnv: []
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+persistentVolume: []
+# Additional volumes on the output Deployment definition.
+volumes:
+  - name: secrets
+    csi:
+      driver: secrets-store.csi.k8s.io
+      readOnly: true
+      volumeAttributes:
+        secretProviderClass: osg-bets-backoffice
+# - name: osg-bets-backoffice
+#   persistentVolumeClaim:
+#     claimName: osg-bets-backoffice
+
+# Additional volumeMounts on the output Deployment definition.
+volumeMounts:
+  - name: secrets
+    mountPath: /mnt/secrets-store
+    readOnly: false
+# - name: osg-bets-backoffice
+#   mountPath: "/osg-bets-backoffice"
+# - name: foo
+#   mountPath: "/etc/foo"
+#   readOnly: true
+
+nodeSelector: {}
+tolerations: []
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/arch
+              operator: In
+              values:
+                - arm64
+startupProbe:
+  httpGet:
+    path: /
+    port: *clusterport
+  initialDelaySeconds: 180
+  failureThreshold: 10
+  timeoutSeconds: 5
+  periodSeconds: 60
+readinessProbe:
+  httpGet:
+    path: /
+    port: *clusterport
+  failureThreshold: 10
+  timeoutSeconds: 5
+  periodSeconds: 30
+livenessProbe:
+  httpGet:
+    path: /
+    port: *clusterport
+  failureThreshold: 10
+  timeoutSeconds: 5
+  periodSeconds: 30
+## --- Configuration for ingress on virtualservice.yaml
+# Enable virtualservices-outside for remote access (set 'false' to disable access service)
+# Service Domain to expose
+virtualservices_outside:
+  enabled: true
+  gateway: default/ollehsports-gateway
+  hosts:
+    - "sl-osg-bets-bo.ollehsports.com"
+  service_uri: "/"
+# Configuration for swagger access (production please set 'false' to disable access swagger)
+swagger:
+  enabled: false
+  swagger_uri: "/swagger-ui/index.html"
+  rewrite_uri: "/."
+corsPolicy:
+  enabled: true
+  corsPolicy:
+    allowOrigins:
+      - exact: '*'
+    allowHeaders:
+      - content-type
+      - x-author
+      - Authorization
+    allowMethods:
+      - POST
+      - GET
+      - PUT
+      - DELETE
+      - PATCH
+      - OPTIONS
+    maxAge: "24h"
+    allowCredentials: false
+env:
+  - name: FUNCTIONALITY
+    value: Bets
+  - name: NEXT_PUBLIC_TRANSLATION_VERSION
+    value: "2.2"
+  - name: NEXT_PUBLIC_DATADOG_ENV
+    value: sl
+  - name: NEXT_PUBLIC_DATADOG_SERVICE
+    value: osg-bets-backoffice
+  - name: NEXT_PUBLIC_DATADOG_SITE
+    value: us5.datadoghq.com
+  - name: NEXT_PUBLIC_OAUTH_API_URL
+    value: https://sl-osg-oauth.ollehsports.com
+  - name: NEXT_PUBLIC_BOGW_API_URL
+    value: https://sl-osg-bet-bo-gateway.ollehsports.com
+  - name: NEXT_PUBLIC_BO_BET_API_URL
+    value: https://sl-osg-bet.ollehsports.com
+  - name: NEXT_PUBLIC_BO_FEED_API_URL
+    value: https://sl-osg-feed-handler.ollehsports.com
+configMap:
+  data: {}
+secrets:
+  - name: NEXT_PUBLIC_MUI_X_PRO_KEY
+    ssm: /ollehsports/sl/bo/mui_x_pro_key
+  - name: NEXT_PUBLIC_DATADOG_CLIENT_TOKEN
+    ssm: /ollehsports/sl/bo/datadog_client_token
+  - name: NEXT_PUBLIC_ENCRYPT_KEY
+    ssm: /ollehsports/sl/bo/bets/encrypt_key
+  - name: NEXT_PUBLIC_LOCAL_ENCRYPT_KEY
+    ssm: /ollehsports/sl/bo/bets/local_encrypt_key
+  - name: NEXT_PUBLIC_LOGIN_ENCRYPTION_KEY_ID
+    ssm: /ollehsports/sl/bo/bets/login_encryption_key_id
+  - name: NEXT_PUBLIC_LOGIN_ENCRYPTION_KEY_SECRET
+    ssm: /ollehsports/sl/bo/bets/login_encryption_key_secret

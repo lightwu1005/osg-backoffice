@@ -1,0 +1,34 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* 使用 Inter 字型的 Bold 變體 */
+.bold-text {
+    font-family: 'Inter Bold', sans-serif;
+}
+
+/* 使用 Inter 字型的 Light 變體 */
+.light-text {
+    font-family: 'Inter Light', sans-serif;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

@@ -1,0 +1,140 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_121_13932)">
+<mask id="mask0_121_13932" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_121_13932)">
+<path d="M0 0H36V24H0V0Z" fill="#1EB53A"/>
+<path d="M0 0H36V12H0V0Z" fill="#0099B5"/>
+<path d="M0 7.67999H36V16.32H0V7.67999Z" fill="#CE1126"/>
+<path d="M0 8.16H36V15.84H0V8.16Z" fill="white"/>
+<path d="M7.02001 6.4C8.09696 6.4 8.97001 5.52696 8.97001 4.45C8.97001 3.37304 8.09696 2.5 7.02001 2.5C5.94305 2.5 5.07001 3.37304 5.07001 4.45C5.07001 5.52696 5.94305 6.4 7.02001 6.4Z" fill="white"/>
+<path d="M7.67 6.4C8.74696 6.4 9.62 5.52696 9.62 4.45C9.62 3.37304 8.74696 2.5 7.67 2.5C6.59305 2.5 5.72 3.37304 5.72 4.45C5.72 5.52696 6.59305 6.4 7.67 6.4Z" fill="#0099B5"/>
+<path d="M11.31 5.63L11.19 6L11.38 6.06" fill="white"/>
+<path d="M11.31 5.63L11.43 6L11.24 6.06" fill="white"/>
+<path d="M11.68 5.90001H11.29V6.10001" fill="white"/>
+<path d="M11.68 5.90001L11.36 6.13001L11.25 5.97001" fill="white"/>
+<path d="M10.94 5.90001L11.26 6.13001L11.37 5.97001" fill="white"/>
+<path d="M10.94 5.90001H11.33V6.10001" fill="white"/>
+<path d="M11.54 6.33001L11.42 5.96001L11.23 6.02001" fill="white"/>
+<path d="M11.54 6.33L11.22 6.1L11.33 5.94" fill="white"/>
+<path d="M11.08 6.33L11.4 6.1L11.29 5.94" fill="white"/>
+<path d="M11.08 6.33001L11.2 5.96001L11.39 6.02001" fill="white"/>
+<path d="M11.31 4.06L11.19 4.43L11.38 4.49" fill="white"/>
+<path d="M11.31 4.06L11.43 4.43L11.24 4.49" fill="white"/>
+<path d="M11.68 4.33H11.29V4.53" fill="white"/>
+<path d="M11.68 4.33L11.36 4.56L11.25 4.4" fill="white"/>
+<path d="M10.94 4.33L11.26 4.56L11.37 4.4" fill="white"/>
+<path d="M10.94 4.33H11.33V4.53" fill="white"/>
+<path d="M11.54 4.77001L11.42 4.40001L11.23 4.46001" fill="white"/>
+<path d="M11.54 4.77L11.22 4.54L11.33 4.38" fill="white"/>
+<path d="M11.08 4.77L11.4 4.54L11.29 4.38" fill="white"/>
+<path d="M11.08 4.77001L11.2 4.40001L11.39 4.46001" fill="white"/>
+<path d="M11.31 2.5L11.19 2.87L11.38 2.93" fill="white"/>
+<path d="M11.31 2.5L11.43 2.87L11.24 2.93" fill="white"/>
+<path d="M11.68 2.77H11.29V2.97" fill="white"/>
+<path d="M11.68 2.77L11.36 3L11.25 2.84" fill="white"/>
+<path d="M10.94 2.77L11.26 3L11.37 2.84" fill="white"/>
+<path d="M10.94 2.77H11.33V2.97" fill="white"/>
+<path d="M11.54 3.21001L11.42 2.84001L11.23 2.90001" fill="white"/>
+<path d="M11.54 3.21001L11.22 2.98001L11.33 2.82001" fill="white"/>
+<path d="M11.08 3.21001L11.4 2.98001L11.29 2.82001" fill="white"/>
+<path d="M11.08 3.21001L11.2 2.84001L11.39 2.90001" fill="white"/>
+<path d="M12.87 5.63L12.75 6L12.94 6.06" fill="white"/>
+<path d="M12.87 5.63L12.99 6L12.8 6.06" fill="white"/>
+<path d="M13.24 5.90001H12.85V6.10001" fill="white"/>
+<path d="M13.24 5.90001L12.92 6.13001L12.81 5.97001" fill="white"/>
+<path d="M12.5 5.90001L12.82 6.13001L12.93 5.97001" fill="white"/>
+<path d="M12.5 5.90001H12.89V6.10001" fill="white"/>
+<path d="M13.1 6.33001L12.98 5.96001L12.79 6.02001" fill="white"/>
+<path d="M13.1 6.33L12.78 6.1L12.89 5.94" fill="white"/>
+<path d="M12.64 6.33L12.96 6.1L12.85 5.94" fill="white"/>
+<path d="M12.64 6.33001L12.76 5.96001L12.95 6.02001" fill="white"/>
+<path d="M12.87 4.06L12.75 4.43L12.94 4.49" fill="white"/>
+<path d="M12.87 4.06L12.99 4.43L12.8 4.49" fill="white"/>
+<path d="M13.24 4.33H12.85V4.53" fill="white"/>
+<path d="M13.24 4.33L12.92 4.56L12.81 4.4" fill="white"/>
+<path d="M12.5 4.33L12.82 4.56L12.93 4.4" fill="white"/>
+<path d="M12.5 4.33H12.89V4.53" fill="white"/>
+<path d="M13.1 4.77001L12.98 4.40001L12.79 4.46001" fill="white"/>
+<path d="M13.1 4.77L12.78 4.54L12.89 4.38" fill="white"/>
+<path d="M12.64 4.77L12.96 4.54L12.85 4.38" fill="white"/>
+<path d="M12.64 4.77001L12.76 4.40001L12.95 4.46001" fill="white"/>
+<path d="M12.87 2.5L12.75 2.87L12.94 2.93" fill="white"/>
+<path d="M12.87 2.5L12.99 2.87L12.8 2.93" fill="white"/>
+<path d="M13.24 2.77H12.85V2.97" fill="white"/>
+<path d="M13.24 2.77L12.92 3L12.81 2.84" fill="white"/>
+<path d="M12.5 2.77L12.82 3L12.93 2.84" fill="white"/>
+<path d="M12.5 2.77H12.89V2.97" fill="white"/>
+<path d="M13.1 3.21001L12.98 2.84001L12.79 2.90001" fill="white"/>
+<path d="M13.1 3.21001L12.78 2.98001L12.89 2.82001" fill="white"/>
+<path d="M12.64 3.21001L12.96 2.98001L12.85 2.82001" fill="white"/>
+<path d="M12.64 3.21001L12.76 2.84001L12.95 2.90001" fill="white"/>
+<path d="M14.43 5.63L14.31 6L14.5 6.06" fill="white"/>
+<path d="M14.43 5.63L14.55 6L14.36 6.06" fill="white"/>
+<path d="M14.8 5.90001H14.41V6.10001" fill="white"/>
+<path d="M14.8 5.90001L14.48 6.13001L14.37 5.97001" fill="white"/>
+<path d="M14.06 5.90001L14.38 6.13001L14.49 5.97001" fill="white"/>
+<path d="M14.06 5.90001H14.45V6.10001" fill="white"/>
+<path d="M14.66 6.33001L14.54 5.96001L14.35 6.02001" fill="white"/>
+<path d="M14.66 6.33L14.34 6.1L14.45 5.94" fill="white"/>
+<path d="M14.2 6.33L14.52 6.1L14.41 5.94" fill="white"/>
+<path d="M14.2 6.33001L14.32 5.96001L14.51 6.02001" fill="white"/>
+<path d="M14.43 4.06L14.31 4.43L14.5 4.49" fill="white"/>
+<path d="M14.43 4.06L14.55 4.43L14.36 4.49" fill="white"/>
+<path d="M14.8 4.33H14.41V4.53" fill="white"/>
+<path d="M14.8 4.33L14.48 4.56L14.37 4.4" fill="white"/>
+<path d="M14.06 4.33L14.38 4.56L14.49 4.4" fill="white"/>
+<path d="M14.06 4.33H14.45V4.53" fill="white"/>
+<path d="M14.66 4.77001L14.54 4.40001L14.35 4.46001" fill="white"/>
+<path d="M14.66 4.77L14.34 4.54L14.45 4.38" fill="white"/>
+<path d="M14.2 4.77L14.52 4.54L14.41 4.38" fill="white"/>
+<path d="M14.2 4.77001L14.32 4.40001L14.51 4.46001" fill="white"/>
+<path d="M14.43 2.5L14.31 2.87L14.5 2.93" fill="white"/>
+<path d="M14.43 2.5L14.55 2.87L14.36 2.93" fill="white"/>
+<path d="M14.8 2.77H14.41V2.97" fill="white"/>
+<path d="M14.8 2.77L14.48 3L14.37 2.84" fill="white"/>
+<path d="M14.06 2.77L14.38 3L14.49 2.84" fill="white"/>
+<path d="M14.06 2.77H14.45V2.97" fill="white"/>
+<path d="M14.66 3.21001L14.54 2.84001L14.35 2.90001" fill="white"/>
+<path d="M14.66 3.21001L14.34 2.98001L14.45 2.82001" fill="white"/>
+<path d="M14.2 3.21001L14.52 2.98001L14.41 2.82001" fill="white"/>
+<path d="M14.2 3.21001L14.32 2.84001L14.51 2.90001" fill="white"/>
+<path d="M8.19001 5.63L8.07001 6L8.26001 6.06" fill="white"/>
+<path d="M8.18999 5.63L8.31 6L8.12 6.06" fill="white"/>
+<path d="M8.56001 5.90001H8.17001V6.10001" fill="white"/>
+<path d="M8.56001 5.90001L8.24 6.13001L8.13 5.97001" fill="white"/>
+<path d="M7.82001 5.90001L8.14001 6.13001L8.25001 5.97001" fill="white"/>
+<path d="M7.82001 5.90001H8.21001V6.10001" fill="white"/>
+<path d="M8.42005 6.33001L8.30005 5.96001L8.11005 6.02001" fill="white"/>
+<path d="M8.42004 6.33L8.10004 6.1L8.21004 5.94" fill="white"/>
+<path d="M7.96002 6.33L8.28002 6.1L8.17002 5.94" fill="white"/>
+<path d="M7.96002 6.33001L8.08002 5.96001L8.27002 6.02001" fill="white"/>
+<path d="M9.75 5.63L9.63 6L9.82 6.06" fill="white"/>
+<path d="M9.74999 5.63L9.86999 6L9.67999 6.06" fill="white"/>
+<path d="M10.12 5.90001H9.72998V6.10001" fill="white"/>
+<path d="M10.12 5.90001L9.8 6.13001L9.69 5.97001" fill="white"/>
+<path d="M9.38 5.90001L9.7 6.13001L9.81001 5.97001" fill="white"/>
+<path d="M9.38 5.90001H9.77001V6.10001" fill="white"/>
+<path d="M9.98004 6.33001L9.86004 5.96001L9.67004 6.02001" fill="white"/>
+<path d="M9.98003 6.33L9.66003 6.1L9.77003 5.94" fill="white"/>
+<path d="M9.52002 6.33L9.84002 6.1L9.73002 5.94" fill="white"/>
+<path d="M9.52002 6.33001L9.64002 5.96001L9.83002 6.02001" fill="white"/>
+<path d="M9.75 4.06L9.63 4.43L9.82 4.49" fill="white"/>
+<path d="M9.74999 4.06L9.86999 4.43L9.67999 4.49" fill="white"/>
+<path d="M10.12 4.33H9.72998V4.53" fill="white"/>
+<path d="M10.12 4.33L9.8 4.56L9.69 4.4" fill="white"/>
+<path d="M9.38 4.33L9.7 4.56L9.81001 4.4" fill="white"/>
+<path d="M9.38 4.33H9.77001V4.53" fill="white"/>
+<path d="M9.98004 4.77001L9.86004 4.40001L9.67004 4.46001" fill="white"/>
+<path d="M9.98003 4.77L9.66003 4.54L9.77003 4.38" fill="white"/>
+<path d="M9.52002 4.77L9.84002 4.54L9.73002 4.38" fill="white"/>
+<path d="M9.52002 4.77001L9.64002 4.40001L9.83002 4.46001" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_121_13932">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

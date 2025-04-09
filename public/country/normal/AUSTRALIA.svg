@@ -1,0 +1,33 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_102_5528)">
+<path d="M24 4H-7.62939e-06V20H24V4Z" fill="#012169"/>
+<mask id="mask0_102_5528" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="4" width="12" height="8">
+<path d="M12 4H-7.62939e-06V12H12V4Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_102_5528)">
+<path d="M-7.62939e-06 4L12 12L-7.62939e-06 4ZM12 4L-7.62939e-06 12L12 4Z" fill="black"/>
+<path d="M-7.62939e-06 4L12 12M12 4L-7.62939e-06 12" stroke="white" stroke-width="1.39" stroke-miterlimit="426.67"/>
+</g>
+<mask id="mask1_102_5528" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="4" width="12" height="8">
+<path d="M-7.62939e-06 4V8H12V12L-7.62939e-06 4ZM12 4H5.99999V12H-7.62939e-06L12 4Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_102_5528)">
+<path d="M-7.62939e-06 4L12 12L-7.62939e-06 4ZM12 4L-7.62939e-06 12L12 4Z" fill="black"/>
+<path d="M-7.62939e-06 4L12 12M12 4L-7.62939e-06 12" stroke="#E4002B" stroke-width="0.92" stroke-miterlimit="426.67"/>
+</g>
+<path d="M5.99999 4V12V4ZM-7.62939e-06 8H12H-7.62939e-06Z" fill="black"/>
+<path d="M5.99999 4V12M-7.62939e-06 8H12" stroke="white" stroke-width="2.31" stroke-miterlimit="426.67"/>
+<path d="M6.59999 12H5.39999V8.8H-7.62939e-06V7.2H5.39999V4H6.59999V7.2H12V8.8H6.59999V12Z" fill="#E4002B"/>
+<path d="M5.99999 13.87L6.35999 15L7.46999 14.58L6.80999 15.57L7.82999 16.18L6.64999 16.28L6.80999 17.46L5.98999 16.6L5.16999 17.46L5.32999 16.28L4.14999 16.18L5.16999 15.57L4.50999 14.58L5.61999 15L5.97999 13.87H5.99999Z" fill="white"/>
+<path d="M18.3 15.29L18.47 15.83L19 15.63L18.69 16.1L19.18 16.39L18.62 16.44L18.7 17L18.31 16.59L17.92 17L18 16.44L17.44 16.39L17.93 16.1L17.62 15.63L18.15 15.83L18.32 15.29H18.3Z" fill="white"/>
+<path d="M15.15 10.31L15.32 10.85L15.85 10.65L15.54 11.12L16.03 11.41L15.47 11.46L15.55 12.02L15.16 11.61L14.77 12.02L14.85 11.46L14.29 11.41L14.78 11.12L14.47 10.65L15 10.85L15.17 10.31H15.15Z" fill="white"/>
+<path d="M18.3 6.89999L18.47 7.43999L19 7.23999L18.69 7.70999L19.18 7.99999L18.62 8.04999L18.7 8.60999L18.31 8.19999L17.92 8.60999L18 8.04999L17.44 7.99999L17.93 7.70999L17.62 7.23999L18.15 7.43999L18.32 6.89999H18.3Z" fill="white"/>
+<path d="M21.09 9.47L21.26 10.01L21.79 9.81L21.48 10.28L21.97 10.57L21.41 10.62L21.49 11.18L21.1 10.77L20.71 11.18L20.79 10.62L20.23 10.57L20.72 10.28L20.41 9.81L20.94 10.01L21.11 9.47H21.09Z" fill="white"/>
+<path d="M19.55 12L19.69 12.34L20.05 12.37L19.77 12.6L19.86 12.95L19.55 12.76L19.24 12.95L19.33 12.6L19.05 12.37L19.41 12.34L19.55 12Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_102_5528">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

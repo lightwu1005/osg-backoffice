@@ -1,0 +1,9 @@
+node_modules
+deploy
+.git
+.github
+.vscode
+.env.*
+.secrets
+.next
+sonar-project.properties
